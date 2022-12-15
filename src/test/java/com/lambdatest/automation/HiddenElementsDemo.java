@@ -50,11 +50,11 @@ public class HiddenElementsDemo {
 		// maximize window
 		driver.manage().window().maximize();
 
-		// wait condition
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		// explicit wait - to wait for the  link to be click-able
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//span[normalize-space()='Automation Practice']"))).click();
 
-		// navigating to section of hidden element
-		driver.findElement(By.xpath("//span[normalize-space()='Automation Practice']")).click();
 		Thread.sleep(1000);
 
 		// Clicking on the Hide button
