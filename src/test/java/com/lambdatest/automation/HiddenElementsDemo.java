@@ -32,8 +32,8 @@ public class HiddenElementsDemo {
 		capabilities.setCapability("browserName", "Chrome");
 		capabilities.setCapability("browserVersion", "108.0");
 		HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-		ltOptions.put("username", "himanshujlambdatest");
-		ltOptions.put("accessKey", "wXpA5BKlR6dpAa0sYUy8s8WYZ45ZsY3hQlLa7habW0mfpF3VSu");
+		ltOptions.put("username", "lambda Test username");
+		ltOptions.put("accessKey", "access-key");
 		ltOptions.put("platformName", "Windows 10");
 		ltOptions.put("project", "Untitled");
 		capabilities.setCapability("LT:Options", ltOptions);
